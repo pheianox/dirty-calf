@@ -1,4 +1,4 @@
-const { MD5 } = require("./utils/md5-sum.js");
+const md5Sum = require("./utils/md5-sum.js");
 
 module.exports = class DirtyCalf {
     constructor(options) {
