@@ -9,6 +9,7 @@ module.exports = class DirtyCalf {
                 suffix: "",
                 digitPrefix: "_",
             },
+            verbose: false,
         };
 
         options = { ...defaultOptions, ...options };
@@ -23,8 +24,10 @@ module.exports = class DirtyCalf {
 
         this._alphabet = options.alphabet;
         this._options = options.formatting;
+        this._verbose = options.verbose;
         this._cache = [];
         this._position = [0];
+        this._count = 0;
     }
 
     poop(name, filename, css) {
@@ -34,8 +37,15 @@ module.exports = class DirtyCalf {
         if (cachedData) return cachedData.className;
 
         const className = this._next();
+
         this._cache.push({ name, filename, hash, className });
 
+        if (this._verbose)
+            console.log(
+                `[] =========== [${++this._count}] =========== []\nInput: '${name}'\nOutput: '${className}'\nFilename: ${filename}\nTotal classes: ${
+                    this._cache.length
+                }`
+            );
         return className;
     }
 
