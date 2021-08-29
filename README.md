@@ -17,7 +17,7 @@ Example
 
 ```
 
-Don't use me in small projects, it will not make much difference. **_The bigger CSS file, the bigger percentage_**.
+Don't use me in small projects, it will not make much difference. **_The bigger CSS file and alphabet, the bigger percentage_**.
 
 ## Installation
 
