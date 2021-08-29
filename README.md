@@ -20,7 +20,7 @@ Don't use me in small projects, it will not make much difference. **_The bigger 
 
 ## Installation 
 ```
-npm i --save-dev dirty-calf 
+npm i -D dirty-calf 
 ```
 
 
@@ -55,3 +55,6 @@ const dirtyCalf = new DirtyCalf(config);
 
 ## License 
 MIT
+
+## Ideas
+The issues section is open for you. Improve me with any ideas you have
