@@ -1,0 +1,21 @@
+{
+    "name": "dirty-calf",
+    "version": "1.0.0",
+    "description": "Generates short classnames for your css modules",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pheianox/dirty-calf.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pheianox/dirty-calf/issues"
+    },
+    "homepage": "https://github.com/pheianox/dirty-calf#readme"
+}
