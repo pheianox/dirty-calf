@@ -1,6 +1,6 @@
 {
     "name": "dirty-calf",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Generates short classnames for your css modules",
     "main": "src/index.js",
     "scripts": {
