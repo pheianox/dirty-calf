@@ -1,13 +1,13 @@
-import { MD5 } from "./utils/md5-sum.js";
+const { MD5 } = require("./utils/md5-sum.js");
 
-export default class DirtyCalf {
+module.exports = class DirtyCalf {
     constructor(options) {
         const defaultOptions = {
             alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_",
             formatting: {
                 prefix: "",
                 suffix: "",
-                digitPrefix: false,
+                digitPrefix: "_",
             },
         };
 
@@ -73,4 +73,4 @@ export default class DirtyCalf {
             yield this._next();
         }
     }
-}
+};
