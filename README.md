@@ -1,6 +1,6 @@
 # Dirty Calf
 
-I'm super dirty calf and my job is to shorten your ugly CSS classes.
+I'm a super dirty calf and my job is to poop short CSS classes for you project.
 
 I can reduce your **_CSS bundle size_** by 40-70%. 
 
@@ -8,10 +8,10 @@ Use me with [postcss modules](https://github.com/madyankin/postcss-modules).
 
 Example
 ```js
-// Turn these ugly class names
+// Turn these ugly classes
 "navbar" "navbar__link" "footer" "btn-closed" "my-wife"
 
-// Into beautiful alphabet
+// Into a beautiful alphabet
 "a" "b" "c" "d" "e" ... "aa" "ab" "ac" ... "xyz" "xzz" ...
 
 ```
@@ -25,7 +25,7 @@ npm i --save-dev dirty-calf
 
 
 ## Config
-Super-duper simple config
+A Super-duper simple config. You can always extend my alphabet and add some sort of prefixes and suffixes.
 ```ts
 {
   alphabet: string; // All characters that will be used, default: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_",
@@ -40,12 +40,14 @@ Super-duper simple config
 ```
 
 ## Usage
-Put my `poop` method in [postcss modules generate scooped names](https://github.com/madyankin/postcss-modules#generating-scoped-names) property and that's it. 
+Put my `poop` method in the [postcss modules generate scooped names](https://github.com/madyankin/postcss-modules#generating-scoped-names) property and that's it. 
 ```js
+// Give me birth and config me 
 const dirtyCalf = new DirtyCalf(config);
 
 // Postcss modules config
 ...
+   // My poop method goes here
   generateScopedName: dirtyCalf.poop
 ...
 
